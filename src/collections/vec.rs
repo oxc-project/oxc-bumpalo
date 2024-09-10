@@ -521,7 +521,7 @@ macro_rules! vec {
 /// [owned slice]: https://doc.rust-lang.org/std/boxed/struct.Box.html
 pub struct Vec<'bump, T: 'bump> {
     buf: RawVec<'bump, T>,
-    len: usize,
+    len: u32,
 }
 
 ////////////////////////////////////////////////////////////////////////////////
